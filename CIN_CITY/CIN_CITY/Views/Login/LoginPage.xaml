@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<features:EnhancedContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                              xmlns:features="clr-namespace:CIN_CITY.Features"
+                              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                              ios:Page.UseSafeArea="True"
+                              x:Class="CIN_CITY.Views.LoginPage"
+                              Title="{StaticResource text_app_title}">
+
+    <AbsoluteLayout HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    x:Name="MasterLayout">
+
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All"
+                    VerticalOptions="Start">
+            <StackLayout>
+
+                <!-- Image -->
+                <Image x:Name="HeaderImage"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       Margin="{StaticResource margin}" />
+
+                <!-- Titles -->
+                <Label Text="{StaticResource text_main_title1}"
+                       Style="{StaticResource text_style_title}" />
+
+                <Label Text="{StaticResource text_main_title2}"
+                       Style="{StaticResource text_style_regular}" />
+
+                <Entry x:Name="UserEntry"
+                       Text=""
+                       Placeholder="{StaticResource text_main_username}"
+                       Visual="Material"/>
+
+                <Entry x:Name="PassEntry"
+                       Text=""
+                       IsPassword="True"
+                       Placeholder="{StaticResource text_main_password}"
+                       Visual="Material"/>
+
+
+                <!-- Buttons -->
+                <Button Text="{StaticResource text_register}"
+                        Style="{StaticResource button_style_pressed}"
+                        WidthRequest="{StaticResource button_width_verywide}"
+                        HorizontalOptions="Center"
+                        Clicked="OnRegisterButtonClicked"
+                        x:Name="LoginButton" />
+
+                <Button Text="{StaticResource text_login}"
+                        Style="{StaticResource button_style_pressed}"
+                        WidthRequest="{StaticResource button_width_verywide}"
+                        HorizontalOptions="Center"
+                        Clicked="OnLoginButtonClicked"
+                        x:Name="RegisterButton" />
+            </StackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
+
+</features:EnhancedContentPage>

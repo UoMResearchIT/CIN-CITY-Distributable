@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:features="clr-namespace:CIN_CITY.Features"
+             x:Class="CIN_CITY.Views.Questions.SpatialQuestionsPage"
+             Title="{StaticResource text_worried_title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="{StaticResource feeling_question}" />
+                <features:CustomPicker ItemsSource="{Binding FeelingPickerSource}"
+                                       SelectedItem="{Binding FeelingPicked}"
+                                       Title="{StaticResource placeholder_picker}" />
+                <Label Text="{StaticResource feeling_ans3_1}"
+                       IsVisible="{Binding ShowOpinionQuestion}" />
+                <Editor Placeholder="{StaticResource placeholder_editor}"
+                        Text="{Binding OpinionText}"
+                        IsVisible="{Binding ShowOpinionQuestion}" />
+                <Label Text="{StaticResource intensity_question}" />
+                <features:CustomPicker ItemsSource="{Binding IntensityPickerSource}"
+                                       SelectedItem="{Binding IntensityPicked}"
+                                       Title="{StaticResource placeholder_picker}" />
+                <Label Text="{StaticResource motivation_question}"
+                       IsVisible="{Binding ShowMotivationQuestion}" />
+                <Editor Placeholder="{StaticResource placeholder_editor}"
+                        Text="{Binding MotivationText}"
+                        IsVisible="{Binding ShowMotivationQuestion}" />
+                <Label Text="{StaticResource company_question}" />
+                <features:CustomPicker ItemsSource="{Binding CompanyPickerSource}"
+                                       SelectedItem="{Binding CompanyPicked}"
+                                       Title="{StaticResource placeholder_picker}" />
+                <Button Text="{StaticResource text_submit}"
+                        Command="{Binding SubmitCommand}"
+                        IsEnabled="{Binding SubmitEnabled}" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

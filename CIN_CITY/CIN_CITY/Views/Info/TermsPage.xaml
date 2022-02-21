@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="True"
+             x:Class="CIN_CITY.Views.TermsPage">
+    <ContentPage.Content>
+        <Grid
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill"
+            Padding="{StaticResource margin}"
+            RowSpacing="{StaticResource margin}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!-- Content added programmatically -->
+            <Frame
+                x:Name="MasterStack"
+                Style="{StaticResource frame_style_regular}"
+                Padding="{StaticResource margin}"
+                VerticalOptions="Fill"
+                HorizontalOptions="Fill">
+            </Frame>
+            <Button
+                Grid.Row="1"
+                Style="{StaticResource button_style_pressed}"
+                Text="{StaticResource text_back}"
+                Clicked="BackClicked"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

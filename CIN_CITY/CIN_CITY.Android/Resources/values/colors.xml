@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="launcher_background">#FFFFFF</color>
+	<color name="uom_purple">#660099</color>
+	<color name="white">#FFFFFF</color>
+	<color name="colorPrimary">#660099</color>
+	<color name="colorPrimaryDark">#660099</color>
+	<color name="colorAccent">#660099</color>
+	<color name="splash_background">#660099</color>
+	<color name="colorControlNormal">#b205fa</color>
+	<color name="colorControlActivated">#660099</color>
+	<color name="colorControlHighlight">#b205fa</color>
+	<color name="textColorSecondary">#b205fa</color>
+	
+</resources>

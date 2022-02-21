@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Configurations>EN-Debug;EN-Release;CZ-Debug;CZ-Release;EN-Production;CZ-Production</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EN-Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CZ-Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CZ-Production|AnyCPU'">
+    <DefineConstants>TRACE;PROD</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='EN-Production|AnyCPU'">
+    <DefineConstants>TRACE;PROD</DefineConstants>
+  </PropertyGroup>
+  
+  <!-- Customisations -->
+  <ItemGroup Condition="'$(Configuration)'=='EN-Debug' OR '$(Configuration)'=='EN-Release' OR '$(Configuration)'=='EN-Production'">
+    <EmbeddedResource Remove="..\..\Languages\**\about.html" />
+	<EmbeddedResource Remove="..\..\Languages\**\help.html" />
+	<EmbeddedResource Remove="..\..\Languages\**\policy.html" />
+	<EmbeddedResource Remove="..\..\Languages\**\AppResources.xaml" />
+	<Compile Remove="..\..\Languages\**\AppResources.xaml.cs" />
+	
+    <EmbeddedResource Include="..\..\Languages\en\about.html">
+      <Link>Resources\about.html</Link>
+    </EmbeddedResource>
+	<EmbeddedResource Include="..\..\Languages\en\help.html">
+      <Link>Resources\help.html</Link>
+    </EmbeddedResource>
+	<EmbeddedResource Include="..\..\Languages\en\policy.html">
+      <Link>Resources\policy.html</Link>
+    </EmbeddedResource>
+	<EmbeddedResource Include="..\..\Languages\en\AppResources.xaml">
+	  <Link>Resources\AppResources.xaml</Link>
+	  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <Compile Include="..\..\Languages\en\AppResources.xaml.cs">
+	  <Link>Resources\AppResources.xaml.cs</Link>
+      <DependentUpon>AppResources.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='CZ-Debug' OR '$(Configuration)'=='CZ-Release' OR '$(Configuration)'=='CZ-Production'">
+    <EmbeddedResource Remove="..\..\Languages\**\about.html" />
+	<EmbeddedResource Remove="..\..\Languages\**\help.html" />
+	<EmbeddedResource Remove="..\..\Languages\**\policy.html" />
+	<EmbeddedResource Remove="..\..\Languages\**\AppResources.xaml" />
+	<Compile Remove="..\..\Languages\**\AppResources.xaml.cs" />
+	
+    <EmbeddedResource Include="..\..\Languages\cz\about.html">
+      <Link>Resources\about.html</Link>
+    </EmbeddedResource>
+	<EmbeddedResource Include="..\..\Languages\cz\help.html">
+      <Link>Resources\help.html</Link>
+    </EmbeddedResource>
+	<EmbeddedResource Include="..\..\Languages\cz\policy.html">
+      <Link>Resources\policy.html</Link>
+    </EmbeddedResource>
+	<EmbeddedResource Include="..\..\Languages\cz\AppResources.xaml">
+	  <Link>Resources\AppResources.xaml</Link>
+	  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <Compile Include="..\..\Languages\cz\AppResources.xaml.cs">
+	  <Link>Resources\AppResources.xaml.cs</Link>
+      <DependentUpon>AppResources.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- End Customisations -->
+
+  <ItemGroup>
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.13" />
+    <PackageReference Include="Xam.Plugin.Geolocator" Version="4.5.0.6" />
+    <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2125" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="5.0.0.2125" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarCIN_CITYHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+</Project>

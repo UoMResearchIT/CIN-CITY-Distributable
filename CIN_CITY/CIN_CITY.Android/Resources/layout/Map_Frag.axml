@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout     
+    xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"   
+     android:id="@+id/linear"
+      android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:orientation="vertical" >
+
+   
+            <!-- Title -->
+     <!--
+            <Label    
+          android:id="@+id/lbl1"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="Location Map xxx"      />
+    -->
+            <!-- Map Fragment -->
+           
+         <fragment xmlns:android="http://schemas.android.com/apk/res/android"                
+            android:id="@+id/map_container"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            class="CIN_CITY.Droid.OnMapReadyClass">                         
+         </fragment>     
+        
+            <!-- Text -->
+            <Label
+           android:id="@+id/lbl2"
+              android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="Enter hours since event"/>
+     <!-- Input box -->
+        <EditText
+     
+             android:id="@+id/map_container_edithours"
+             android:layout_height="100dp"
+             android:layout_width="200dp"
+             android:singleLine="true"/>
+  
+     <Button
+            android:name="MyButtton"          
+            android:id="@+id/map_container_btn"
+            android:layout_gravity="left|bottom"               
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"/>
+    </LinearLayout>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="LinguaSnapp.Resources.AppResources">
+
+    <!-- General Strings -->
+	<x:String x:Key="text_app_title">CIN-CITY</x:String>
+	<x:String x:Key="text_talking">Spojení se serverem...</x:String>
+	<x:String x:Key="text_saving">Ukládání...</x:String>
+	<x:String x:Key="text_ok">OK</x:String>
+	<x:String x:Key="text_yes">Ano</x:String>
+	<x:String x:Key="text_no">Ne</x:String>
+	<x:String x:Key="text_next">Další</x:String>
+	<x:String x:Key="text_cancel">Zrušit</x:String>
+	<x:String x:Key="text_previous">Předchozí</x:String>
+	<x:String x:Key="text_finish">Dokončit</x:String>
+	<x:String x:Key="text_thanks">Děkujeme</x:String>
+	<x:String x:Key="text_submit">Odeslat</x:String>
+	<x:String x:Key="text_menu">Menu</x:String>
+	<x:String x:Key="text_continue">Pokračovat</x:String>
+	<x:String x:Key="text_save">Uložit</x:String>
+	<x:String x:Key="text_confirm">Potvrdit</x:String>
+
+	<!-- Worried Page -->
+	<x:String x:Key="text_worried_title">Create Report</x:String>
+	<x:String x:Key="text_notworried">Not at all worried</x:String>
+	<x:String x:Key="text_bitworried">Not very worried</x:String>
+	<x:String x:Key="text_fairlyworried">Fairly Worried</x:String>
+	<x:String x:Key="text_verworried">Very Worried</x:String>
+	<x:String x:Key="text_victim_title">At this moment, how worried are you about becoming a victim of a knife incident?</x:String>
+	<x:String x:Key="text_submit_title">Odeslat</x:String>
+	<x:String x:Key="text_submit_text">Chcete odeslat záznam?</x:String>
+
+	<!-- About Demographics -->
+	<x:String x:Key="text_about_title1">O vás</x:String>
+	<x:String x:Key="text_about_ins_complete">Prosím, vyplňte následující</x:String>
+	<x:String x:Key="text_about_gender">Gender</x:String>
+	<x:String x:Key="text_picker_gender">Vyberte gender </x:String>
+	<x:String x:Key="text_about_age">Věk</x:String>
+	<x:String x:Key="text_picker_age">Vyberte věk</x:String>
+	<x:String x:Key="text_back">Zpět</x:String>
+	<x:String x:Key="text_female">Žena</x:String>
+	<x:String x:Key="text_male">Muž</x:String>
+	<x:String x:Key="text_trans">Trans</x:String>
+	<x:String x:Key="text_prefernot">Jiné</x:String>
+
+	<!-- About Ethnicity -->
+	<x:String x:Key="text_about_title2">Podrobnosti o účasti</x:String>
+	<x:String x:Key="text_about_ins_pc">Odpovězte prosím, ve kterém městě se účastníte, a pokud jste se zúčastnili také předchozí části studie Map Me, doplňte přidělené čtyřmístní ID číslo, které vám bylo zasláno předem (pokud jste se této části nezúčastnili, napište „xxxx“)</x:String>
+	<x:String x:Key="text_about_ethnicity">Město</x:String>
+	<x:String x:Key="text_picker_ethnicity">Vyberte město</x:String>
+	<x:String x:Key="text_white_british">Manchester, UK</x:String>
+	<x:String x:Key="text_white_irish">Olomouc</x:String>
+	<x:String x:Key="text_white_other">Jiné město</x:String>
+	<x:String x:Key="text_about_homePC">Map Me</x:String>
+	<x:String x:Key="text_picker_homePC">Vložte vaše čtyřmístné ID</x:String>
+	<x:String x:Key="text_about_schoolPC">School Postcode</x:String>
+	<x:String x:Key="text_picker_schoolPC">Enter School Postcode</x:String>
+
+	<!-- About Previous Incident Page -->
+	<x:String x:Key="text_about_previncident">During the last 12 months have you PERSONALLY (not others in your household) been a victim of crime? Please include anything that happened to you at home, in the street, at school, in a shop, in a park, on a train or anywhere else.</x:String>
+	<x:String x:Key="text_picker_previncident">Select Yes or No</x:String>
+	<x:String x:Key="text_yes_previncident">Yes</x:String>
+	<x:String x:Key="text_no_previncident">No</x:String>
+
+	<!-- Login Page -->
+	<x:String x:Key="text_main_title1">Začínáme</x:String>
+	<x:String x:Key="text_main_title2">Přihlaste se nebo se zaregistrujte</x:String>
+	<x:String x:Key="text_main_switch">Vyberte, chcete-li se zaregistrovat jako nový uživatel</x:String>
+	<x:String x:Key="text_main_pass">Vaše hesla nejsou správná</x:String>
+	<x:String x:Key="text_main_username">Uživatelské jméno (5+ znaky)</x:String>
+	<x:String x:Key="text_main_password">Heslo (8+ znaky)</x:String>
+	<x:String x:Key="text_login">Přihlášení</x:String>
+	<x:String x:Key="text_register">Registrace</x:String>
+	<x:String x:Key="text_confirmpassword_popup">Zadejte prosím své heslo znovu</x:String>
+	<x:String x:Key="text_confirmpw_fail_title">Chyba hesla</x:String>
+	<x:String x:Key="text_confirmpw_fail">Hesla nejsou správná, zadejte prosím své heslo znovu </x:String>
+
+	<!-- Alerts and Errors -->
+	<x:String x:Key="text_about_warning_title">Vyberte možnost</x:String>
+	<x:String x:Key="text_about_warning_text">Vyplňte prosím všechny možnosti</x:String>
+	<x:String x:Key="text_bufferload_fail">Chyba: Nahrávání se nezdařilo</x:String>
+	<x:String x:Key="text_connection_title">Problém s připojením</x:String>
+	<x:String x:Key="text_connection_text">Problém s připojením</x:String>
+	<x:String x:Key="text_connection_exception">Máte problém s připojením k internetu. Prosím zkontrolujte nastavení a zkuste to znovu.</x:String>
+	<x:String x:Key="text_upload_success">Odeslání proběhlo úspěšně</x:String>
+	<x:String x:Key="text_upload_fail">Odeslání se nezdařilo</x:String>
+	<x:String x:Key="text_login_success">Úspěšné přihlášení</x:String>
+	<x:String x:Key="text_login_fail">Přihlášení se nezdařilo</x:String>
+	<x:String x:Key="text_verify_success">Ověření bylo úspěšné</x:String>
+	<x:String x:Key="text_verify_fail">Ověření se nezdařilo</x:String>
+	<x:String x:Key="text_register_success">Registrace proběhla úspěšně</x:String>
+	<x:String x:Key="text_register_fail">Registrace se nezdařila</x:String>
+	<x:String x:Key="text_register_nodetails">Zadejte prosím registrační/přihlašovací údaje</x:String>
+	<x:String x:Key="text_location_title">Problém s polohou</x:String>
+	<x:String x:Key="text_location_unknown">Vyskytl se problém se získáním informací o poloze. Zkontrolujte prosím své nastavení.</x:String>
+	<x:String x:Key="text_location_supported">Poloha není na zařízení podporována. Obraťte se na technickou podporu.</x:String>
+	<x:String x:Key="text_location_enabled">Poloha není v zařízení povolena. Povolte sledování polohy, abyste mohli používat aplikaci.</x:String>
+	<x:String x:Key="text_location_permission">Oprávnění k poloze není uděleno. Chcete-li používat aplikaci, povolte oprávnění k poloze</x:String>
+	<x:String x:Key="text_location_problemunknown">Nelze navázat GPS připojení kvůli neznámému problému. Obraťte se na technickou podporu.</x:String>
+
+	<!-- Incident Type Page -->
+	<x:String x:Key="text_incident_type">Incident Type</x:String>
+	<x:String x:Key="text_hasaknife">I heard about someone having a knife</x:String>
+	<x:String x:Key="text_sawaknife">I saw a knife</x:String>
+	<x:String x:Key="text_threaten">I saw someone threaten to use a knife</x:String>
+	<x:String x:Key="text_useaknife">I saw someone use a knife</x:String>
+	<x:String x:Key="text_incidenttypeother">Other</x:String>
+	<x:String x:Key="text_incidentdetails_feelings">What made you feel this way? Please choose one option</x:String>
+	<x:String x:Key="text_incidentdetailsother_errtitle">Other incident type details error</x:String>
+	<x:String x:Key="text_incidentdetails_other">Enter 'Other' details</x:String>
+	<x:String x:Key="text_publictransport_popup">Was this on public transport?</x:String>
+	<x:String x:Key="text_incidenttypeother_popup">Please enter 'Other' details</x:String>
+	<x:String x:Key="text_incidenttypeentry_popup">Enter 'other' details here</x:String>
+	<x:String x:Key="text_incidenttypeothertextentered_popup">'Other' Details Saved:</x:String>
+	<x:String x:Key="text_incidenttypeothererror_popup">Please enter a description for 'Other'</x:String>
+
+	<!-- Notifications Page -->
+	<x:String x:Key="text_error_notifications">Zadejte počet připomínek, které chcete denně přijat </x:String>
+	<x:String x:Key="text_about_error_alert4">Zadejte prosím počáteční a konečný čas připomínek</x:String>
+	<x:String x:Key="text_alerts_title">Notifikace</x:String>
+	<x:String x:Key="text_about_text4">Pro dokončení otázek povolte připomenutí oznámení</x:String>
+	<x:String x:Key="text_about_postcodelength_title">Invalid postcode</x:String>
+	<x:String x:Key="text_about_postcodelength_invalid">Enter the first couple of characters of your postcode</x:String>
+	<x:String x:Key="text_about_timestartalert4">Notification Period:</x:String>
+	<x:String x:Key="text_about_startendinvalid4">Notification end time must be after start time</x:String>
+	<x:String x:Key="text_about_enablealert4">Připomínky povoleny</x:String>
+	<x:String x:Key="text_picker_notifications">Vyberte číslo</x:String>
+	<x:String x:Key="text_about_noofnotifications">Počet připomínek k vyplnění otázek během dne</x:String>
+	<x:String x:Key="text_alert_info">Upozornění deaktivujte pouze v případě, že NECHCETE dostávat žádné připomínky</x:String>
+	<x:String x:Key="text_notification_title">Čas na odeslání vašich odpovědí</x:String>
+	<x:String x:Key="text_notification_text">Přejděte na #CinCity a pošlete nám data</x:String>
+
+	<!-- Consent Page -->
+	<x:String x:Key="text_about_title5">Informovaný souhlas účastníka</x:String>
+	<x:String x:Key="text_about_text5">Přečtěte si prosím informace pro účastníka</x:String>
+	<x:String x:Key="text_about_text5_2">Přečetl jsem si informovaný souhlas </x:String>
+	<x:String x:Key="text_about_tcs">ZOBRAZIT INFORMACE O ÚČASTI</x:String>
+	<x:String x:Key="text_about_title6">Vítejte v CIN-CITY Prostorová vnímaní</x:String>
+	<x:String x:Key="text_about_text6">Děkujeme za vyplnění údajů o vašich nastaveních.</x:String>
+	
+	<!-- Exit Command -->
+	<x:String x:Key="text_exit_title">Ukončit CIN-CITY?</x:String>
+	<x:String x:Key="text_exit_thanks">Potvrďte prosím. Děkujeme, že používáte CIN-CITY Prostorové vnímaní.</x:String>
+
+	<!-- Report Page -->
+	<x:String x:Key="text_reportincident_title">Z níže uvedených možností vyberte typ záznamu, který chcete vytvořit</x:String>
+	<x:String x:Key="text_incident_recordalert">Nahlášení záznamu v reakci na připomínku</x:String>
+	<x:String x:Key="text_incident_recordnow">Nahlásit nyní </x:String>
+	<x:String x:Key="text_incident_recordprev">Report a Previous Incident</x:String>
+
+	<!-- Google Maps -->
+	<x:String x:Key="text_google_error">V tomto zařízení je problém se službami Google Play. Pokud potřebujete další informace, nainstalujte nebo vyhledejte technickou pomoc</x:String>
+	<x:String x:Key="text_google_ok">Služby Google Play jsou na tomto zařízení nainstalovány a jsou k dispozici.</x:String>
+	<x:String x:Key="text_location_accessneeded">K používání této aplikace je vyžadován přístup k poloze. Prosím povolte sledování polohy. Pokud potřebujete další informace, vyhledejte technickou pomoc</x:String>
+	<x:String x:Key="text_maps_pintitle">CIN-CITY</x:String>
+	<x:String x:Key="text_maps_pindescr">Previous Incident Location</x:String>
+	<x:String x:Key="text_maps_title">Record Location</x:String>
+	<x:String x:Key="text_maps_clickerror">Please click on Map to record the location of the incident</x:String>
+	<x:String x:Key="text_maps_instructions">Touch the map on a location you wish to send a report about to select the area.Please be as precise as possible.Touch 'Next' to proceed.</x:String>
+	
+	<!-- Hours Popup -->
+	<x:String x:Key="text_hoursago_title">Previous Incident</x:String>
+	<x:String x:Key="text_hoursago_popup">How many hours ago did the event happen?</x:String>
+	<x:String x:Key="text_hoursago_error">Please enter a numeric value > 0 for 'Hours'</x:String>
+	<x:String x:Key="text_hoursago_toast">Number of Hours since the knife incident has happened:</x:String>
+
+	<!-- Thank You Page -->
+	<x:String x:Key="text_thanks_title">Děkujeme za váš záznam.</x:String>
+
+	<!-- Settings Page -->
+	<x:String x:Key="text_savechanges_text">Chcete uložit změny?</x:String>
+	
+	<!-- Menu Strings -->
+	<x:String x:Key="text_menu_reportincident">Záznam</x:String>
+	<x:String x:Key="text_menu_notifications">Upozornění</x:String>
+	<x:String x:Key="text_menu_about">Informace </x:String>
+	<x:String x:Key="text_menu_help">Pomoc</x:String>
+	<x:String x:Key="text_menu_exit">Konec</x:String>
+
+	<!-- Spatial Questions -->
+	<x:String x:Key="feeling_question">Místo, na kterém se zrovna nacházím považuji za:</x:String>
+	<x:String x:Key="feeling_ans1">Příjemné, mám z něho pozitivní pocit a navštěvuji ho s radostí</x:String>
+	<x:String x:Key="feeling_ans2">Nepříjemné, mám z něho negativní pocit a když je to možné, raději se mu vyhnu.</x:String>
+	<x:String x:Key="feeling_ans3">Opuštěné, prázdné, nevyužívané nebo bez jakéhokoliv účelu, nic tady není.</x:String>
+	<x:String x:Key="feeling_ans3_1">Jaký by byl podle vašeho názoru nejlepší způsob využití tohoto místa? Jak byste ho změnili, kdyby to bylo možné?</x:String>
+	<x:String x:Key="intensity_question">Jak byste ohodnotili intenzitu tohoto pocitu?</x:String>
+	<x:String x:Key="intensity_ans1">Velmi nízká</x:String>
+	<x:String x:Key="intensity_ans2">Nízká</x:String>
+	<x:String x:Key="intensity_ans3">Střední</x:String>
+	<x:String x:Key="intensity_ans3_1">Vysoká</x:String>
+	<x:String x:Key="intensity_ans4">Velmi vysoká</x:String>
+	<x:String x:Key="motivation_question">Jaký je hlavní důvod, který u vás způsobuje tyto pocity?</x:String>
+	<x:String x:Key="company_question">V tuto chvíli jsem:</x:String>
+	<x:String x:Key="company_ans1">Sám/sama</x:String>
+	<x:String x:Key="company_ans2">S někým</x:String>
+	<x:String x:Key="placeholder_picker">Vyberte možnost</x:String>
+	<x:String x:Key="placeholder_editor">Zadejte text</x:String>
+
+</ResourceDictionary>

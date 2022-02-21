@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="LinguaSnapp.Resources.AppResources">
+
+    <!-- General Strings -->
+	<x:String x:Key="text_app_title">CIN-CITY</x:String>
+	<x:String x:Key="text_talking">Talking to Server...</x:String>
+	<x:String x:Key="text_saving">Saving...</x:String>
+	<x:String x:Key="text_ok">OK</x:String>
+	<x:String x:Key="text_yes">Yes</x:String>
+	<x:String x:Key="text_no">No</x:String>
+	<x:String x:Key="text_next">Next</x:String>
+	<x:String x:Key="text_cancel">Cancel</x:String>
+	<x:String x:Key="text_previous">Previous</x:String>
+	<x:String x:Key="text_finish">Finish</x:String>
+	<x:String x:Key="text_thanks">Thank You</x:String>
+	<x:String x:Key="text_submit">Submit</x:String>
+	<x:String x:Key="text_menu">Menu</x:String>
+	<x:String x:Key="text_continue">Continue</x:String>
+	<x:String x:Key="text_save">Save</x:String>
+	<x:String x:Key="text_confirm">Confirm</x:String>
+
+	<!-- Worried Page -->
+	<x:String x:Key="text_worried_title">Create Report</x:String>
+	<x:String x:Key="text_notworried">Not at all worried</x:String>
+	<x:String x:Key="text_bitworried">Not very worried</x:String>
+	<x:String x:Key="text_fairlyworried">Fairly Worried</x:String>
+	<x:String x:Key="text_verworried">Very Worried</x:String>
+	<x:String x:Key="text_victim_title">At this moment, how worried are you about becoming a victim of a knife incident?</x:String>
+	<x:String x:Key="text_submit_title">Submit</x:String>
+	<x:String x:Key="text_submit_text">Are you sure you want to submit?</x:String>
+
+	<!-- About Demographics -->
+	<x:String x:Key="text_about_title1">About You</x:String>
+	<x:String x:Key="text_about_ins_complete">Please complete the following</x:String>
+	<x:String x:Key="text_about_gender">Gender</x:String>
+	<x:String x:Key="text_picker_gender">Select Gender</x:String>
+	<x:String x:Key="text_about_age">Age</x:String>
+	<x:String x:Key="text_picker_age">Select Age</x:String>
+	<x:String x:Key="text_back">Back</x:String>
+	<x:String x:Key="text_female">Female</x:String>
+	<x:String x:Key="text_male">Male</x:String>
+	<x:String x:Key="text_trans">Trans</x:String>
+	<x:String x:Key="text_prefernot">Other</x:String>
+
+	<!-- About Ethnicity -->
+	<x:String x:Key="text_about_title2">Participant Details</x:String>
+	<x:String x:Key="text_about_ins_pc">Please identify the city in which you are participating, and enter your 4 digit ID number (if you did not participate write "none").</x:String>
+	<x:String x:Key="text_about_ethnicity">City</x:String>
+	<x:String x:Key="text_picker_ethnicity">Select your city of participation</x:String>
+	<x:String x:Key="text_white_british">Manchester, UK</x:String>
+	<x:String x:Key="text_white_irish">Olomouc</x:String>
+	<x:String x:Key="text_white_other">Other</x:String>
+	<x:String x:Key="text_about_homePC">ID Number</x:String>
+	<x:String x:Key="text_picker_homePC">Enter Map Me id</x:String>
+	<x:String x:Key="text_about_schoolPC">School Postcode</x:String>
+	<x:String x:Key="text_picker_schoolPC">Enter School Postcode</x:String>
+
+	<!-- About Previous Incident Page -->
+	<x:String x:Key="text_about_previncident">During the last 12 months have you PERSONALLY (not others in your household) been a victim of crime? Please include anything that happened to you at home, in the street, at school, in a shop, in a park, on a train or anywhere else.</x:String>
+	<x:String x:Key="text_picker_previncident">Select Yes or No</x:String>
+	<x:String x:Key="text_yes_previncident">Yes</x:String>
+	<x:String x:Key="text_no_previncident">No</x:String>
+
+	<!-- Login Page -->
+	<x:String x:Key="text_main_title1">Getting Started</x:String>
+	<x:String x:Key="text_main_title2">Please sign in or register</x:String>
+	<x:String x:Key="text_main_switch">Select to register as a new user</x:String>
+	<x:String x:Key="text_main_pass">Your passwords do not match</x:String>
+	<x:String x:Key="text_main_username">Username (5+ chars)</x:String>
+	<x:String x:Key="text_main_password">Password (8+ chars)</x:String>
+	<x:String x:Key="text_login">Login</x:String>
+	<x:String x:Key="text_register">Register</x:String>
+	<x:String x:Key="text_confirmpassword_popup">Please re-enter your password</x:String>
+	<x:String x:Key="text_confirmpw_fail_title">Password Error</x:String>
+	<x:String x:Key="text_confirmpw_fail">Passwords do not match, please re-enter your password</x:String>
+
+	<!-- Alerts and Errors -->
+	<x:String x:Key="text_about_warning_title">Select An Option</x:String>
+	<x:String x:Key="text_about_warning_text">Please complete all options</x:String>
+	<x:String x:Key="text_bufferload_fail">Error: Report Upload Failed</x:String>
+	<x:String x:Key="text_connection_title">Connection Problem</x:String>
+	<x:String x:Key="text_connection_text">You do not appear to have an internet connection. You must have a connection to register/login. Check your internet settings. Any information that can be stored will be submitted later where possible.</x:String>
+	<x:String x:Key="text_connection_exception">You have an internet connection issue. please check your settings and re-try.</x:String>
+	<x:String x:Key="text_upload_success">Upload Successful</x:String>
+	<x:String x:Key="text_upload_fail">Upload Failed</x:String>
+	<x:String x:Key="text_login_success">Login Successful</x:String>
+	<x:String x:Key="text_login_fail">Login Failed</x:String>
+	<x:String x:Key="text_verify_success">Verification Successful</x:String>
+	<x:String x:Key="text_verify_fail">Verification Failed</x:String>
+	<x:String x:Key="text_register_success">Registration Successful</x:String>
+	<x:String x:Key="text_register_fail">Registration Failed</x:String>
+	<x:String x:Key="text_register_nodetails">Please enter registration/login details</x:String>
+	<x:String x:Key="text_location_title">Location Problem</x:String>
+	<x:String x:Key="text_location_unknown">There is an issue with obtain Location information. Please check your settings</x:String>
+	<x:String x:Key="text_location_supported">Location not supported on device. Please seek technical advise.</x:String>
+	<x:String x:Key="text_location_enabled">Location not enabled on device.Please enable location handling to use App.</x:String>
+	<x:String x:Key="text_location_permission">Location permissions not granted.Please enable location permissions to use App</x:String>
+	<x:String x:Key="text_location_problemunknown">Unable to establish GPS connection due to unknown problem. Please seek technical advise.</x:String>
+
+	<!-- Incident Type Page -->
+	<x:String x:Key="text_incident_type">Incident Type</x:String>
+	<x:String x:Key="text_hasaknife">I heard about someone having a knife</x:String>
+	<x:String x:Key="text_sawaknife">I saw a knife</x:String>
+	<x:String x:Key="text_threaten">I saw someone threaten to use a knife</x:String>
+	<x:String x:Key="text_useaknife">I saw someone use a knife</x:String>
+	<x:String x:Key="text_incidenttypeother">Other</x:String>
+	<x:String x:Key="text_incidentdetails_feelings">What made you feel this way? Please choose one option</x:String>
+	<x:String x:Key="text_incidentdetailsother_errtitle">Other incident type details error</x:String>
+	<x:String x:Key="text_incidentdetails_other">Enter 'Other' details</x:String>
+	<x:String x:Key="text_publictransport_popup">Was this on public transport?</x:String>
+	<x:String x:Key="text_incidenttypeother_popup">Please enter 'Other' details</x:String>
+	<x:String x:Key="text_incidenttypeentry_popup">Enter 'other' details here</x:String>
+	<x:String x:Key="text_incidenttypeothertextentered_popup">'Other' Details Saved:</x:String>
+	<x:String x:Key="text_incidenttypeothererror_popup">Please enter a description for 'Other'</x:String>
+
+	<!-- Notifications Page -->
+	<x:String x:Key="text_error_notifications">Please enter the number of notifications a day you are happy to recieve</x:String>
+	<x:String x:Key="text_about_error_alert4">Please enter both start and end notification times</x:String>
+	<x:String x:Key="text_alerts_title">Notifications</x:String>
+	<x:String x:Key="text_about_text4">Enable a notification reminder to complete the questions</x:String>
+	<x:String x:Key="text_about_postcodelength_title">Invalid postcode</x:String>
+	<x:String x:Key="text_about_postcodelength_invalid">Enter the 4 digit ID or write "none"</x:String>
+	<x:String x:Key="text_about_timestartalert4">Notification Period:</x:String>
+	<x:String x:Key="text_about_startendinvalid4">Notification end time must be after start time</x:String>
+	<x:String x:Key="text_about_enablealert4">Notifications Enabled</x:String>
+	<x:String x:Key="text_picker_notifications">Select Number</x:String>
+	<x:String x:Key="text_about_noofnotifications">Number of times per day to be reminded to complete the questions</x:String>
+	<x:String x:Key="text_alert_info">Please only disable notifications if you do NOT wish to receive daily reminders to fill in reports</x:String>
+	<x:String x:Key="text_notification_title">Time to Submit Your Answers</x:String>
+	<x:String x:Key="text_notification_text">Head to #CinCity and send us data!</x:String>
+
+	<!-- Consent Page -->
+	<x:String x:Key="text_about_title5">Participant Information and Consent</x:String>
+	<x:String x:Key="text_about_text5">Please read the participant sheet</x:String>
+	<x:String x:Key="text_about_text5_2">I have read the participant sheet and consent</x:String>
+	<x:String x:Key="text_about_tcs">VIEW PARTICIPATION INFORMATION</x:String>
+	<x:String x:Key="text_about_title6">Welcome to CIN-CITY Spatial Perceptions</x:String>
+	<x:String x:Key="text_about_text6">Thanks for completing your settings information.</x:String>
+	
+	<!-- Exit Command -->
+	<x:String x:Key="text_exit_title">Exit CIN-CITY  Spatial Perceptions?</x:String>
+	<x:String x:Key="text_exit_thanks">Please Confirm. Thanks for using CIN-CITY  Spatial Perceptions.</x:String>
+
+	<!-- Report Page -->
+	<x:String x:Key="text_reportincident_title">Choose the type of report you wish to make from the options below</x:String>
+	<x:String x:Key="text_incident_recordalert">Report in Response to Notification</x:String>
+	<x:String x:Key="text_incident_recordnow">Report Now</x:String>
+	<x:String x:Key="text_incident_recordprev">Report a Previous Incident</x:String>
+
+	<!-- Google Maps -->
+	<x:String x:Key="text_google_error">There is a problem with Google Play Services on this device. Please install or seek technical help if you need more information</x:String>
+	<x:String x:Key="text_google_ok">Google Play Services is installed and available on this device.</x:String>
+	<x:String x:Key="text_location_accessneeded">Location access is required to use this App. Please allow location handling. Seek technical help if you need more information</x:String>
+	<x:String x:Key="text_maps_pintitle">CIN-CITY</x:String>
+	<x:String x:Key="text_maps_pindescr">Previous Incident Location</x:String>
+	<x:String x:Key="text_maps_title">Record Location</x:String>
+	<x:String x:Key="text_maps_clickerror">Please click on Map to record the location of the incident</x:String>
+	<x:String x:Key="text_maps_instructions">Touch the map on a location you wish to send a report about to select the area.Please be as precise as possible.Touch 'Next' to proceed.</x:String>
+	
+	<!-- Hours Popup -->
+	<x:String x:Key="text_hoursago_title">Previous Incident</x:String>
+	<x:String x:Key="text_hoursago_popup">How many hours ago did the event happen?</x:String>
+	<x:String x:Key="text_hoursago_error">Please enter a numeric value > 0 for 'Hours'</x:String>
+	<x:String x:Key="text_hoursago_toast">Number of Hours since the knife incident has happened:</x:String>
+
+	<!-- Thank You Page -->
+	<x:String x:Key="text_thanks_title">Thank you for your report.</x:String>
+
+	<!-- Settings Page -->
+	<x:String x:Key="text_savechanges_text">Do you want to save your changes?</x:String>
+	
+	<!-- Menu Strings -->
+	<x:String x:Key="text_menu_reportincident">Report</x:String>
+	<x:String x:Key="text_menu_notifications">Notifications</x:String>
+	<x:String x:Key="text_menu_about">About</x:String>
+	<x:String x:Key="text_menu_help">Help</x:String>
+	<x:String x:Key="text_menu_exit">Exit</x:String>
+
+	<!-- Spatial Questions -->
+	<x:String x:Key="feeling_question">I consider the place where I am right now to be:</x:String>
+	<x:String x:Key="feeling_ans1">Pleasant, I have a positive feeling about it, and I visit it with pleasure</x:String>
+	<x:String x:Key="feeling_ans2">Unpleasant, I have a negative feeling about it, and I rather avoid it when possible</x:String>
+	<x:String x:Key="feeling_ans3">Abandoned, empty, underutilised or without any purpose, there is nothing here</x:String>
+	<x:String x:Key="feeling_ans3_1">In your opinion, what would be the best purpose of this place? How would you reconstruct / rebuild / change it if it were possible / up to you?</x:String>
+	<x:String x:Key="intensity_question">How would you rate the intensity of this feeling?</x:String>
+	<x:String x:Key="intensity_ans1">Very Low</x:String>
+	<x:String x:Key="intensity_ans2">Low</x:String>
+	<x:String x:Key="intensity_ans3">Medium</x:String>
+	<x:String x:Key="intensity_ans3_1">High</x:String>
+	<x:String x:Key="intensity_ans4">Very High</x:String>
+	<x:String x:Key="motivation_question">What is the main reason that motivates you to feel this way?</x:String>
+	<x:String x:Key="company_question">At the moment I am:</x:String>
+	<x:String x:Key="company_ans1">Alone</x:String>
+	<x:String x:Key="company_ans2">With somebody</x:String>
+	<x:String x:Key="placeholder_picker">Choose an Option</x:String>
+	<x:String x:Key="placeholder_editor">Enter Text</x:String>
+
+</ResourceDictionary>

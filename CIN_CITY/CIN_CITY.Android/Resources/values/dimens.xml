@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="textSize_small">16dp</dimen>
+	<dimen name="padding_small">5dp</dimen>
+	<dimen name="margin_small">10dp</dimen>
+	<dimen name="margin_large">20dp</dimen>
+	<dimen name="field_width">30dp</dimen>
+	<dimen name="mapfrag_width">400dp</dimen>
+	<dimen name="mapfrag_height">400dp</dimen>
+
+</resources>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<features:EnhancedContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                              xmlns:features="clr-namespace:CIN_CITY.Features"
+                              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                              ios:Page.UseSafeArea="True"
+                              x:Class="CIN_CITY.Views.AboutEthPostCodesPage2">
+    <AbsoluteLayout HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    x:Name="MasterLayout">
+        <Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+              AbsoluteLayout.LayoutFlags="All">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <StackLayout>
+                    <!-- Title -->
+                    <Label VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Text="{StaticResource text_about_title2}"
+                           Style="{StaticResource text_style_title}" />
+                    <!-- Icon -->
+                    <Image VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Source="{Binding PageIcon}" />
+                    <!-- Text -->
+                    <Label VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Text="{StaticResource text_about_ins_pc}"
+                           Style="{StaticResource text_style_regular}" />
+                    <!-- Grid to hold content -->
+                    <Frame Style="{StaticResource frame_style_regular}"
+                           WidthRequest="{StaticResource field_width_wide}">
+                        <StackLayout>
+                            <!-- Ethnicity  -->
+                            <Label VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   Text="{StaticResource text_about_ethnicity}"
+                                   Style="{StaticResource text_style_regular}" />
+                            <features:CustomPicker Title="{StaticResource text_picker_ethnicity}"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    WidthRequest="{StaticResource field_width_wide}"
+                                    ItemsSource="{Binding Ethnicity}"
+                                    SelectedItem="{Binding SelectedEthnicity, Mode=TwoWay}" />
+                            <!-- Home PC  -->
+                            <Label VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   Text="{StaticResource text_about_homePC}"
+                                   Style="{StaticResource text_style_regular}" />
+                            <Entry x:Name="HomePC"
+                                   Text="{Binding HomePC}"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   WidthRequest="{StaticResource field_width_wide}" />
+                            <!-- School PC  -->
+                            <!--<Label VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   Text="{StaticResource text_about_schoolPC}"
+                                   Style="{StaticResource text_style_regular}" />
+                            <Entry x:Name="SchoolPC"
+                                   Text="{Binding SchoolPC}"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   WidthRequest="{StaticResource field_width_wide}" />-->
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <!-- Next and Previous Buttons -->
+            <Grid Grid.Row="1"
+                  VerticalOptions="End"
+                  HorizontalOptions="Fill"
+                  ColumnSpacing="{StaticResource margin}"
+                  RowSpacing="{StaticResource margin}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0"
+                        Style="{StaticResource button_style_pressed}"
+                        Text="{StaticResource text_previous}"
+                        HorizontalOptions="Start"
+                        Clicked="BackClicked" />
+                <Button Grid.Column="1"
+                        Style="{StaticResource button_style_pressed}"
+                        Text="{StaticResource text_next}"
+                        HorizontalOptions="End"
+                        Clicked="NextClicked" />
+            </Grid>
+        </Grid>
+    </AbsoluteLayout>
+</features:EnhancedContentPage>

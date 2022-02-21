@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CIN_CITY.Views.ReportIncidentPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             Title="{StaticResource text_menu_reportincident}">
+    <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                AbsoluteLayout.LayoutFlags="All">
+        <StackLayout>
+            <Label Text="{StaticResource text_reportincident_title}"
+                   Style="{StaticResource text_style_regular}"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center" />
+            <Button x:Name="BtnReportFromAlert"
+                    Text="{StaticResource text_incident_recordalert}"
+                    Style="{StaticResource button_style_pressed}"
+                    HeightRequest="{StaticResource button_width_wide}"
+                    Clicked="OnButtonAlertClicked" />
+            <Button x:Name="BtnReportNow"
+                    Text="{StaticResource text_incident_recordnow}"
+                    Style="{StaticResource button_style_pressed}"
+                    HeightRequest="{StaticResource button_width_wide}"
+                    Clicked="OnButtonNowClicked" />
+            <!--<Button x:Name="BtnReportPast"
+                    Text="{StaticResource text_incident_recordprev}"
+                    Style="{StaticResource button_style_pressed}"
+                    HeightRequest="{StaticResource button_width_wide}"
+                    Clicked="OnButtonPastClicked" />-->
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

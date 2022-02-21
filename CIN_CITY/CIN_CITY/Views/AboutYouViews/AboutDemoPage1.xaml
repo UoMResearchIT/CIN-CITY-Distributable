@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<features:EnhancedContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                              xmlns:features="clr-namespace:CIN_CITY.Features"
+                              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                              ios:Page.UseSafeArea="True"
+                              x:Class="CIN_CITY.Views.AboutDemoPage1">
+    <ScrollView>
+        <AbsoluteLayout HorizontalOptions="Fill"
+                        VerticalOptions="Fill"
+                        x:Name="MasterLayout">
+            <Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                  AbsoluteLayout.LayoutFlags="All">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <ScrollView>
+                    <StackLayout>
+                        <!-- Title -->
+                        <Label VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Text="{StaticResource text_about_title1}"
+                               Style="{StaticResource text_style_title}" />
+
+                        <!-- Icon -->
+                        <Image VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Source="{Binding PageIcon}" />
+
+                        <!-- Text -->
+                        <Label VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Text="{StaticResource text_about_ins_complete}"
+                               Style="{StaticResource text_style_regular}" />
+
+                        <!-- Grid to hold content -->
+                        <Frame Style="{StaticResource frame_style_regular}">
+                            <StackLayout>
+                                <!-- Year they were born -->
+                                <Label VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Text="{StaticResource text_about_age}"
+                                       Style="{StaticResource text_style_regular}" />
+                                <features:CustomPicker Title="{StaticResource text_picker_age}"
+                                                       HorizontalOptions="Fill"
+                                                       WidthRequest="{StaticResource field_width}"
+                                                       ItemsSource="{Binding BirthYears}"
+                                                       SelectedItem="{Binding SelectedAge, Mode=TwoWay}" />
+                                <!-- Gender  -->
+                                <Label VerticalOptions="Center"
+                                       HorizontalOptions="Center"
+                                       Text="{StaticResource text_about_gender}"
+                                       Style="{StaticResource text_style_regular}" />
+                                <features:CustomPicker Title="{StaticResource text_picker_gender}"
+                                                       HorizontalOptions="Fill"
+                                                       WidthRequest="{StaticResource field_width}"
+                                                       ItemsSource="{Binding Genders}"
+                                                       SelectedItem="{Binding SelectedGender, Mode=TwoWay}" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+                <!-- Buttons -->
+                <Button Grid.Row="1"
+                        Style="{StaticResource button_style_pressed}"
+                        Text="{StaticResource text_next}"
+                        HorizontalOptions="Center"
+                        Clicked="NextClicked" />
+            </Grid>
+        </AbsoluteLayout>
+    </ScrollView>
+</features:EnhancedContentPage>

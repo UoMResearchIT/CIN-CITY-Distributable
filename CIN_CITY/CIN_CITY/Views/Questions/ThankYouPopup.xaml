@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="http://rotorgames.com"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             x:Class="CIN_CITY.Views.ThankYouPopup">
+    <Grid RowDefinitions="Auto, Auto"
+          HorizontalOptions="Center"
+          VerticalOptions="Center"
+          Margin="{StaticResource margin}"
+          Padding="32"
+          BackgroundColor="GhostWhite">
+        <Label VerticalOptions="Center"
+               HorizontalOptions="Center"
+               Text="{StaticResource text_thanks_title}"
+               Style="{StaticResource text_style_title}" />
+        <Image Grid.Row="1"
+               x:Name="PageIcon"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+    </Grid>
+</pages:PopupPage>

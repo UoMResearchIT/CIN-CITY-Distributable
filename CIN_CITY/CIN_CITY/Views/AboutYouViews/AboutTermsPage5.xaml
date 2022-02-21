@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<features:EnhancedContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                              xmlns:features="clr-namespace:CIN_CITY.Features"
+                              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                              ios:Page.UseSafeArea="True"
+                              x:Class="CIN_CITY.Views.AboutTermsPage5">
+
+    <AbsoluteLayout HorizontalOptions="Fill"
+                    VerticalOptions="Fill"
+                    x:Name="MasterLayout">
+
+        <Grid AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+              AbsoluteLayout.LayoutFlags="All">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <StackLayout>
+
+                    <!-- Title -->
+                    <Label VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Text="{StaticResource text_about_title5}"
+                           Style="{StaticResource text_style_title}" />
+
+                    <!-- Icon -->
+                    <Image x:Name="PageIcon"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Source="" />
+
+                    <!-- Text -->
+                    <Label VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Text="{StaticResource text_about_text5}"
+                           Style="{StaticResource text_style_regular}" />
+
+                    <!-- Grid to hold content -->
+                    <Frame Style="{StaticResource frame_style_regular}">
+                        <Grid ColumnSpacing="{StaticResource margin}"
+                              RowSpacing="{StaticResource margin}"
+                              HorizontalOptions="Center">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Button Grid.Row="0"
+                                    Grid.ColumnSpan="2"
+                                    Style="{StaticResource button_style_pressed}"
+                                    Text="{StaticResource text_about_tcs}"
+                                    WidthRequest="{StaticResource button_width_verywide}"
+                                    Clicked="TermsClicked" />
+
+                            <CheckBox Grid.Row="1"
+                                      Grid.Column="0"
+                                      CheckedChanged="CheckTerms_CheckedChanged"
+                                      IsChecked="False"
+                                      Color="{StaticResource uom_purple}"
+                                      x:Name="MyCheckBox" />
+
+                            <Label Grid.Row="1"
+                                   Grid.Column="1"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   Text="{StaticResource text_about_text5_2}"
+                                   Style="{StaticResource text_style_small}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                </Label.GestureRecognizers>
+                            </Label>
+
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Buttons -->
+            <Grid Grid.Row="1"
+                  VerticalOptions="End"
+                  HorizontalOptions="Fill"
+                  ColumnSpacing="{StaticResource margin}"
+                  RowSpacing="{StaticResource margin}">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                        Style="{StaticResource button_style_pressed}"
+                        Text="{StaticResource text_previous}"
+                        HorizontalOptions="Start"
+                        Clicked="PreviousClicked" />
+
+                <Button x:Name="NextButton"
+                        Grid.Column="1"
+                        Style="{StaticResource button_style_pressed}"
+                        Text="{StaticResource text_next}"
+                        HorizontalOptions="End"
+                        Clicked="NextClicked"
+                        IsEnabled="False" />
+
+            </Grid>
+
+        </Grid>
+
+    </AbsoluteLayout>
+
+</features:EnhancedContentPage>

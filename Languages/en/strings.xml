@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="textandroid_maps_title">Click on Map to Record Location</string>
+	<string name="textandroid_next">Next</string>
+	<string name="textandroid_previous">Previous</string>
+
+	<string name="boot_notification_title">CIN-CITY noticed your device boot</string>
+	<string name="boot_notification_text">Please send us some data. Tap to go to CIN-CITY!</string>
+
+	<string name="app_name">CIN-CITY</string>
+	
+</resources>

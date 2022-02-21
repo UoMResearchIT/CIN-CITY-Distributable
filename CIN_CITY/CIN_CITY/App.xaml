@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:features="clr-namespace:CIN_CITY.Features"
+             xmlns:res="clr-namespace:LinguaSnapp.Resources"
+             x:Class="CIN_CITY.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <res:AppResources />
+            </ResourceDictionary.MergedDictionaries>
+            
+            <!-- Colours -->
+            <Color x:Key="uom_purple">#660099</Color>
+            <Color x:Key="uom_grey">#999999</Color>
+            <Color x:Key="secondary">#A1E4FF</Color>
+
+            <!-- Numbers -->
+            <x:Double x:Key="margin">5</x:Double>
+            <x:Double x:Key="margin_narrow">2</x:Double>
+            <x:Double x:Key="margin_very_narrow">1</x:Double>
+            <x:Int32 x:Key="radius">5</x:Int32>
+            <x:Int32 x:Key="border">4</x:Int32>
+            <x:Int32 x:Key="border_thin">2</x:Int32>
+            <x:Double x:Key="field_width">200</x:Double>
+            <x:Double x:Key="field_width_wide">300</x:Double>
+            <x:Double x:Key="button_height_small">50</x:Double>
+            <x:Double x:Key="button_width">100</x:Double>
+            <x:Double x:Key="button_width_wide">200</x:Double>
+            <x:Double x:Key="button_width_verywide">280</x:Double>
+            <x:Double x:Key="icon_size">80</x:Double>
+            <x:Int32 x:Key="checkInternetWaitTime">3000</x:Int32>
+            <x:Int32 x:Key="checkGPSWaitTime">30000</x:Int32>
+
+            <!-- Image files -->
+            <OnPlatform x:Key="ic_foca_icon_big"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">HeaderPaddedWhite</On>
+                <On Platform="Android">ic_reka_foca_icon_plain_big</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="ic_foca_icon"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">HeaderPaddedWhite</On>
+                <On Platform="Android">ic_reka_foca_icon_plain</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_house"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">HouseLarge</On>
+                <On Platform="Android">ic_icon_house</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_person"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">PersonLarge</On>
+                <On Platform="Android">ic_icon_person</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_alarm"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">AlarmVeryLarge</On>
+                <On Platform="Android">ic_icon_alarm</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_alarm_small"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">AlarmLarge</On>
+                <On Platform="Android">ic_icon_alarm_small</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_flower"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">FlowerLarge</On>
+                <On Platform="Android">ic_icon_flower</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_thumbup"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">ThumbUpLarge</On>
+                <On Platform="Android">ic_icon_thumbup</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_close"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">CloseIcon</On>
+                <On Platform="Android">ic_changed_close</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_help"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">HelpIcon</On>
+                <On Platform="Android">ic_changed_live_help</On>
+            </OnPlatform>
+
+            <OnPlatform x:Key="icon_info"
+                        x:TypeArguments="x:String">
+                <On Platform="iOS">InfoSmall</On>
+                <On Platform="Android">ic_icon_info</On>
+            </OnPlatform>
+
+            <!-- Fonts -->
+            <x:String x:Key="font_open_sans">OpenSansRegular</x:String>
+            <x:String x:Key="font_open_sans_semibold">OpenSansSemiBold</x:String>
+
+            <!-- Styling -->
+            <Style x:Key="button_style_pressed"
+                   TargetType="Button">
+                <Setter Property="HorizontalOptions"
+                        Value="Center" />
+                <Setter Property="BorderColor"
+                        Value="GhostWhite" />
+                <Setter Property="BorderRadius"
+                        Value="{StaticResource radius}" />
+                <Setter Property="CornerRadius"
+                        Value="{StaticResource radius}" />
+                <Setter Property="BorderWidth"
+                        Value="{StaticResource border_thin}" />
+                <Setter Property="WidthRequest"
+                        Value="{StaticResource button_width_wide}" />
+                <Setter Property="TextColor"
+                        Value="White" />
+                <Setter Property="BackgroundColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="FontSize"
+                        Value="Medium" />
+                <Setter Property="Padding"
+                        Value="{StaticResource margin}" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin}" />
+            </Style>
+
+            <Style TargetType="Button"
+                   x:Key="button_style_unpressed"
+                   BasedOn="{StaticResource button_style_pressed}">
+                <Setter Property="BackgroundColor"
+                        Value="Transparent" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="BorderColor"
+                        Value="{StaticResource uom_purple}" />
+            </Style>
+
+            <Style TargetType="Button"
+                   BasedOn="{StaticResource button_style_pressed}">
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="HorizontalOptions"
+                        Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions"
+                        Value="CenterAndExpand" />
+                <Setter Property="WidthRequest"
+                        Value="{StaticResource button_width_verywide}" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="BackgroundColor"
+                        Value="GhostWhite" />
+                <Setter Property="FontSize"
+                        Value="Medium" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin}" />
+            </Style>
+
+            <Style x:Key="text_style_small"
+                   TargetType="Label">
+                <Setter Property="FontFamily"
+                        Value="{StaticResource font_open_sans}" />
+                <Setter Property="HorizontalOptions"
+                        Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions"
+                        Value="Center" />
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center" />
+                <Setter Property="HorizontalTextAlignment"
+                        Value="Center" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin_narrow}" />
+                <Setter Property="TextColor"
+                        Value="Black" />
+            </Style>
+
+            <Style x:Key="text_style_regular"
+                   TargetType="Label">
+                <Setter Property="FontFamily"
+                        Value="{StaticResource font_open_sans}" />
+                <Setter Property="HorizontalOptions"
+                        Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions"
+                        Value="Center" />
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center" />
+                <Setter Property="HorizontalTextAlignment"
+                        Value="Center" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin_narrow}" />
+                <Setter Property="FontSize"
+                        Value="Medium" />
+                <Setter Property="TextColor"
+                        Value="Black" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="FontFamily"
+                        Value="{StaticResource font_open_sans}" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin_narrow}" />
+                <Setter Property="FontSize"
+                        Value="Medium" />
+                <Setter Property="TextColor"
+                        Value="Black" />
+            </Style>
+
+            <Style x:Key="text_style_title"
+                   TargetType="Label">
+                <Setter Property="FontFamily"
+                        Value="{StaticResource font_open_sans_semibold}" />
+                <Setter Property="HorizontalOptions"
+                        Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions"
+                        Value="Center" />
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center" />
+                <Setter Property="HorizontalTextAlignment"
+                        Value="Center" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin}" />
+                <Setter Property="FontSize"
+                        Value="Large" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource uom_purple}" />
+            </Style>
+
+            <Style x:Key="text_style_highlighted"
+                   TargetType="Label">
+                <Setter Property="FontFamily"
+                        Value="{StaticResource font_open_sans_semibold}" />
+                <Setter Property="HorizontalOptions"
+                        Value="CenterAndExpand" />
+                <Setter Property="VerticalOptions"
+                        Value="Center" />
+                <Setter Property="VerticalTextAlignment"
+                        Value="Center" />
+                <Setter Property="HorizontalTextAlignment"
+                        Value="Center" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin_narrow}" />
+                <Setter Property="FontSize"
+                        Value="Medium" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource secondary}" />
+            </Style>
+
+            <Style x:Key="frame_style_regular"
+                   TargetType="Frame">
+                <Setter Property="HorizontalOptions"
+                        Value="CenterAndExpand" />
+                <Setter Property="BorderColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="CornerRadius"
+                        Value="{StaticResource radius}" />
+                <Setter Property="Padding"
+                        Value="{StaticResource margin_narrow}" />
+                <Setter Property="Margin"
+                        Value="{StaticResource margin}" />
+            </Style>
+
+            <Style x:Key="slider_style_regular"
+                   TargetType="Slider">
+                <Setter Property="Maximum"
+                        Value="3" />
+                <Setter Property="Minimum"
+                        Value="0" />
+                <Setter Property="MinimumTrackColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="MaximumTrackColor"
+                        Value="{StaticResource uom_grey}" />
+                <Setter Property="ThumbColor"
+                        Value="{StaticResource secondary}" />
+            </Style>
+
+            <Style TargetType="features:CustomPicker">
+                <Setter Property="TitleColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="BackgroundColor"
+                        Value="GhostWhite" />
+            </Style>
+
+            <Style TargetType="StackLayout">
+                <Setter Property="Padding"
+                        Value="10, 0, 10, 0" />
+            </Style>
+
+            <Style TargetType="Editor">
+                <Setter Property="PlaceholderColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="TextColor"
+                        Value="{StaticResource uom_purple}" />
+                <Setter Property="AutoSize"
+                        Value="TextChanges" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

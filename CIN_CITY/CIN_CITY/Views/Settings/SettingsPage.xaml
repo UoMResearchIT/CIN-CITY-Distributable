@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:features="clr-namespace:CIN_CITY.Features"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             x:Class="CIN_CITY.Views.SettingsPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ScrollView>
+                <StackLayout>
+
+                    <Frame Style="{StaticResource frame_style_regular}"
+                           HorizontalOptions="Center">
+                        <Grid ColumnSpacing="{StaticResource margin}"
+                              RowSpacing="{StaticResource margin}"
+                              HorizontalOptions="Fill">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Label HorizontalOptions="Start"
+                                   HorizontalTextAlignment="Start"
+                                   Text="{StaticResource text_about_noofnotifications}"
+                                   Style="{StaticResource text_style_regular}" />
+                            <features:CustomPicker Grid.Column="1"
+                                                   VerticalOptions="Center"
+                                                   HorizontalOptions="End"
+                                                   ItemsSource="{Binding NoOfNotifications}"
+                                                   SelectedItem="{Binding SelectedNoOfNotifications, Mode=TwoWay}"
+                                                   WidthRequest="50" />
+                        </Grid>
+                    </Frame>
+
+                    <!-- Grid to hold Disable Alerts -->
+                    <Frame Style="{StaticResource frame_style_regular}"
+                           HorizontalOptions="Center">
+                        <Grid ColumnSpacing="{StaticResource margin}"
+                              RowSpacing="{StaticResource margin}"
+                              HorizontalOptions="Fill">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.ColumnSpan="2"
+                                   HorizontalOptions="Start"
+                                   HorizontalTextAlignment="Start"
+                                   Text="{StaticResource text_alert_info}"
+                                   Style="{StaticResource text_style_regular}" />
+
+                            <Label Grid.Row="1"
+                                   HorizontalOptions="Start"
+                                   HorizontalTextAlignment="Start"
+                                   Text="{StaticResource text_about_enablealert4}"
+                                   Style="{StaticResource text_style_regular}" />
+                            <Switch x:Name="SwitchAlarm"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="End"
+                                    IsToggled="{Binding AlarmSwitch}" />
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <!-- Save button -->
+            <Button Grid.Row="1"
+                    Style="{StaticResource button_style_pressed}"
+                    Text="{StaticResource text_save}"
+                    HorizontalOptions="Center"
+                    Clicked="SaveClicked" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

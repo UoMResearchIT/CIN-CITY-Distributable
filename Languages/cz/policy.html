@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+	<link rel=Stylesheet type="text/css" media=all
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
+
+    <!-- HTML Policy Document provided by Reka Solymosi -->
+    <style type="text/css">
+		* {
+			font-family: 'Open Sans', sans-serif;
+		}
+	
+        .hljs-literal {
+            color: #990073;
+        }
+
+        .hljs-number {
+            color: #099;
+        }
+
+        .hljs-comment {
+            color: #998;
+            font-style: italic;
+        }
+
+        .hljs-keyword {
+            color: #900;
+            font-weight: bold;
+        }
+
+        .hljs-string {
+            color: #d14;
+        }
+    </style>
+
+    <style type="text/css">
+        code {
+            white-space: pre;
+        }
+    </style>
+    <style type="text/css">
+        pre:not([class]) {
+            background-color: white;
+        }
+    </style>
+    <script type="text/javascript">
+        if (window.hljs) {
+            hljs.configure({ languages: [] });
+            hljs.initHighlightingOnLoad();
+            if (document.readyState && document.readyState === "complete") {
+                window.setTimeout(function () { hljs.initHighlighting(); }, 0);
+            }
+        }
+    </script>
+
+
+
+    <style type="text/css">
+        h1 {
+            font-size: 34px;
+        }
+
+            h1.title {
+                font-size: 38px;
+            }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+
+        h6 {
+            font-size: 12px;
+        }
+
+        .table th:not([align]) {
+            text-align: left;
+        }
+    </style>
+
+    <style type="text/css">
+        .main-container {
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        code {
+            color: inherit;
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tabbed-pane {
+            padding-top: 12px;
+        }
+
+        .html-widget {
+            margin-bottom: 20px;
+        }
+
+        button.code-folding-btn:focus {
+            outline: none;
+        }
+
+        summary {
+            display: list-item;
+        }
+    </style>
+
+
+    <!-- tabsets -->
+
+    <style type="text/css">
+        .tabset-dropdown > .nav-tabs {
+            display: inline-table;
+            max-height: 500px;
+            min-height: 44px;
+            overflow-y: auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+            .tabset-dropdown > .nav-tabs > li.active:before {
+                content: "";
+                font-family: 'Glyphicons Halflings';
+                display: inline-block;
+                padding: 10px;
+                border-right: 1px solid #ddd;
+            }
+
+            .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+                content: "";
+                border: none;
+            }
+
+            .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+                content: "";
+                font-family: 'Glyphicons Halflings';
+                display: inline-block;
+                padding: 10px;
+                border-right: 1px solid #ddd;
+            }
+
+            .tabset-dropdown > .nav-tabs > li.active {
+                display: block;
+            }
+
+            .tabset-dropdown > .nav-tabs > li > a,
+            .tabset-dropdown > .nav-tabs > li > a:focus,
+            .tabset-dropdown > .nav-tabs > li > a:hover {
+                border: none;
+                display: inline-block;
+                border-radius: 4px;
+            }
+
+            .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+                display: block;
+                float: none;
+            }
+
+            .tabset-dropdown > .nav-tabs > li {
+                display: none;
+            }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            window.buildTabsets("TOC");
+        });
+
+        $(document).ready(function () {
+            $('.tabset-dropdown > .nav-tabs > li').click(function () {
+                $(this).parent().toggleClass('nav-tabs-open')
+            });
+        });
+    </script>
+
+    <!-- code folding -->
+
+</head>
+
+<body>
+
+    <div class="container-fluid main-container">
+
+        <div class="fluid-row" id="header">
+            <h2 class="title toc-ignore">CIN-CITY – Prostorová  vnímaní </h2>
+            <h3>Rozšířený informovaný souhlas (RIS)</h3>
+        </div>
+
+        <p>Zveme vás k účasti na výzkumné studii týkající se rozdílného vnímání městského prostoru. Cílem tohoto výzkumu je najít a popsat časové trendy tří typů percepce v tzv. cyklickém čase (v průběhu dnů/nocí, pracovních dnů/víkendů, ročních období). Studujeme dvě různá města – Manchester (Velká Británie) a Olomouc (Česká republika). Než se rozhodnete, zda se výzkumu zúčastníte, je důležité, abyste pochopili, proč se tato studie provádí a co vše bude zahrnovat. Prosím, pečlivě si přečtete následující informace a pokud je Vám cokoliv nejasné zeptejte se. Děkujeme, že jste si našli čas na prostudování tohoto souhlasu.</p>
+        <div id="who-will-conduct-the-research" class="section level2">
+            <h3>Kdo bude provádět výzkum?</h3>
+            <ul>
+                <li>Mgr. Lucia Brisudová – Katedra geografie, Přírodovědecká fakulta, Univerzita Palackého v Olomouci</li>
+                <li>Dr. Reka Solymosi - School of Social Science, The University of Manchester</li>
+                <li>Dr. Jonathan Huck – Department of Geography, School of Environment, Education and Development, The University of Manchester</li>
+
+            </ul>
+        </div>
+        <div id="what-is-the-purpose-of-the-research" class="section level2">
+            <h3>Jaký je účel tohoto výzkumu?</h3>
+            <p>V tomto výzkumu se zaměříme na tři typy vnímání městského prostoru. Místa považovaná za příjemná (1. topofilní), nepříjemná (2. topofobní) a opuštěná nebo prázdná místa, která by mohla být spravována a využita lepším způsobem (3. topovakantní). Budeme sledovat čas jako základní složku vnímání prostoru. Údaje o vnímání budeme shromažďovat pomocí mobilní aplikace, která umožňuje sběr dat v reálném čase a na reálném místě. Tento nový přístup  perspektivu vnímání místa, a může tak představovat důležitý příspěvek v rámci behaviorální geografie. Výběr respondentů je založen na několika pragmatických kritériích, která zahrnují:</p>
+            <ul>
+                <li>přítomnost respondenta ve městě v průběhu realizace kolekce dat,</li>
+                <li>minimální věk (18 let),</li>
+                <li>vlastnictví smartphonu s operačním systémem Android.</li>
+            </ul>
+            <p>Zájem o téma tohoto výzkumu je v neposlední řadě dalším velmi důležitým kritériem výběru respondentů. Platí, že čím větší bude samotný výzkumný vzorek, tím reprezentativnější bude také kvalita výsledných dat.</p>
+        </div>
+        <div  class="section level2">
+            <h3>Budou výsledky výzkumu zveřejněny?</h3>
+            <p>Výsledky plynoucí z tohoto výzkumu budou prezentovány ve formě článků v relevantních odborných časopisech (z oblasti geografie). Vybrané poznatky budou použity také pro účely disertační práce studentky Lucie Brisudové z Univerzity Palackého v Olomouci.</p>
+        </div>
+        <div class="section level2">
+            <h3>Kdo hodnotil tento výzkumný projekt?</h3>
+            <p>Projekt byl přezkoumán a následně schválen Etickou komisí Přírodovědecké Fakulty Univerzity Palackého v Olomouci (Ref. No.:21-01).</p>
+        </div>
+        <div class="section level2">
+            <h3>O co budu požádán, když se výzkumu zúčastním?</h3>
+            <p>Pokud budete souhlasit s účasti, zapojíte se do následujících aktivit:</p>
+            <p><strong>CIN-CITY mobilní aplikace</strong> – po vyplnění online dotazníku Map-Me budete požádáni o instalaci mobilní aplikace (CIN-CITY). Tato aplikace bude sloužit jako hlavní nástroj sběru dat o percepci po zbytek výzkumného projektu. Vaší úlohou bude zaznamenávat vaše aktuální vnímání městského prostoru během několika dnů. Záznamy můžete učinit Tyto reporty můžete podávat kdykoli během dne. Při nahrávaní nahrávání nového záznamu aplikace zaznamená také vaši polohu a aktuální čas a položí Vám několik dalších otázek týkajících se daného typu percepce. Vzhledem ke komplexnosti výzkumu se tento postup bude opakovat ve všech čtyřech ročních obdobích (jak je vidět na schématu níže. Celkový čas potřebný pro absolvování této části výzkumu se bude u každého respondenta lišit v závislosti na počtu záznamů, které se rozhodnete provést během každého dne.</p>
+            <p>Všechny kroky jsou vysvětleny v informačních materiálech a video tutoriálech. Každý účastník obdrží potřebné informace ještě před jeho vlastním zapojením do výzkumného projektu.</p>
+        </div>
+        <div class="section level2">
+            <h3>Budu odměněn/a za svoji účast?</h3>
+            <p>Respondentům nevznikají během participace žádné výdaje a tak nemají nárok na finanční nebo jinou kompenzaci plynoucí z jejich zapojení do výzkumu.</p>
+        </div>
+        <div id="what-happens-if-i-do-not-want-to-take-part-or-if-i-change-my-mind" class="section level2">
+            <h3>Co se stane, když se nebudu chtít zúčastnit nebo  pokud později změním názor?</h3>
+            <p>Je jen na vás, zda se zúčastníte nebo ne. Pokud máte otázky týkající se toho, zda byste se ne/měli zúčastnit, kontaktujte přímo odpovědnou osobu (Lucii Brisudovou), která vám poskytne další informace. Pokud se rozhodnete zúčastnit, obdržíte v elektronické formě tento informovaný souhlas, prostřednictvím kterého budete vyzváni k zaškrtnutí políčka k potvrzení souhlasu. Pokud se rozhodnete zúčastnit, máte stále možnost kdykoli odstoupit bez udání důvod. Z projektu však nebude možné z důvodu anonymizace odstranit žádná data, protože nebudeme schopni identifikovat vaše konkrétní údaje. Vaše práva na ochranu údajů tím nejsou nijak dotčena. V případě, že se rozhodnete neúčastnit, nemusíte dělat nic dalšího.</p>
+        </div>
+
+        <h2>Data Protection and Confidentiality</h2>
+
+        <div class="section level2">
+            <h3>Jaké informace o mně budou shromažďovány?</h3>
+            <p>Budeme shromažďovat informace nazývané „osobní identifikační údaje“, na základě kterých vás můžeme identifikovat výhradně pro účely analýzy výsledků. Konkrétně budeme zjišťovat:</p>
+            <ul>
+                <li>Gender</li>
+                <li>Věk</li>
+                <li>Městská část, ve které žijete</li>
+                <li>Stávající ekonomická aktivita </li>
+                <li>Dosažený stupeň vzdělání</li>
+                <li>Gross monthly income</li>
+                <li>Způsob přepravy po městě</li>
+                <li>Délka pobytu ve městě</li>
+                <li>Další důležitá místa, kde trávíte během dne čas (název ulice)</li>
+            </ul>
+            <p>In the mobile application part of the research you may be asked to take a photo / video of places. This will include photos and video of the environment, not photos or videos of you or the person you are with.</p>
+        </div>
+        <div class="section level2">
+            <h3>Na základě čeho (z právního hlediska) shromažďujete tyto informace?</h3>
+            <p>Tyto osobní identifikační údaje shromažďujeme a uchováváme v souladu se zákonem o ochraně osobních údajů (GDPR)..</p>
+        </div>
+        <div class="section level2">
+            <h3>Je účast ve studii důvěrná a budou mé osobní identifikační údaje chráněny?</h3>
+            <p>Jsme zodpovědní za zajištění toho, aby vaše osobní údaje byly uchovávány v bezpečí a aby byly používány pouze pro předem popsané účely. Všechny osoby zapojené do realizace výzkumu jsou vyškolené a o vaše data bude postaráno následujícími způsoby.</p>
+            <p>Před samotnou účastí ve výzkumu obdržíte osobní identifikační číslo. Toto číslo bude sloužit pro některé aspekty výzkumného procesu, ale také zajistí anonymizaci vaší osoby a výsledků. Ke klíči, který spojuje toto ID číslo s vašimi osobními údaji, bude mít přístup pouze výzkumný tým.</p>
+            <p>Váš informovaný souhlas a kontaktní údaje budou uchovávány po dobu maximálně 10 let. Tyto informace budou bezpečně uloženy v datovém systému University of Manchester a v datovém úložišti Katedry geografie Univerzity Palackého v Olomouci a z dlouhodobého horizontu jsou potřebné pro další zpracování a analýzu výsledků..</p>
+            <p>S vaším souhlasem budou informace sdíleny a archivovány za účelem podpory dalšího výzkumu. Sdílení dat a informací mezi University of Manchester a Univerzitou Palackého v Olomouci je nezbytné, protože vzájemná spolupráce představuje základní přístup celého výzkumu.</p>
+            <p>Základní kontaktní údaje respondentů (e – mail/telefon) budou taktéž uloženy, a to po stejnou dobu po jakou budou uloženy i výsledky. Toto opatření slouží pouze pro sdílení a prezentace konečných výsledků, ale také pro případ, že by účastníci měli v budoucnosti zájem o opakovanou spolupráci na podobných projektech. Tyto informace budou použity pouze pro výše uvedené účely a nemohou být použity ohledně jakékoli jiné záležitosti, která nesouvisí s tímto výzkumem.</p>
+            <p>The photos and videos voluntarily captured and uploaded in the mobile application by participants in the course of research will only be used for research purposes and better interpretation of data. With your consent, these materials could be included in articles in journals, in result presentations and into the dissertation thesis as well.</p>
+            <p>Vezměte prosím na vědomí, že pověřené osoby z University of Manchester/Univerzity Palackého v Olomouci nebo jiné osoby z příslušných regulačních orgánů můžou mít v budoucnosti zájem podívat se na data shromážděná pro tuto studii, aby se ujistili, že projekt probíhá podle plánu. To může zahrnovat prohlížení identifikovatelných údajů. Všechny osoby zapojené do auditování a monitorování studie budou mít vůči vám jako účastníkovi výzkumu přísnou povinnost mlčenlivosti.</p>
+        </div>
+        <div class="section level2">
+            <h3>Co když budu mít stížnost?</h3>
+            <p>Pokud máte stížnost, kterou chcete zaslat členům výzkumného týmu, kontaktujte prosím:</p>
+            <p>Mgr. Lucia Brisudová<br />lucia.brisudova@upol.cz<br />+420 608 045 600</p>
+            <p>If you wish to make a formal complaint to someone independent of the research team or if you are not satisfied with the response you have gained from the researchers in the first instance then please contact: The Research Ethics Manager, Research Office, Christie Building, The University of Manchester, Oxford Road, Manchester, M13 9PL, by emailing research.complaints@manchester.ac.uk or by telephoning +44161 306 8089.</p>
+            <p>If you wish to contact us about your data protection rights, please email dataprotection@manchester.ac.uk or write to The Information Governance Office, Christie Building, The University of Manchester, Oxford Road, M13 9PL at the University and we will guide you through the process of exercising your rights.</p>
+            <p>You also have a right to complain to the Information Commissioner’s Office about complaints relating to your personal identifiable information Tel +44303 123 1113.</p>
+        </div>
+        <div class="section level2">
+            <h3>Další informace týkající se COVID-19</h3>
+            <p>Vzhledem k současné pandemii COVID-19 jsme provedli několik úprav ve způsobu, jakým bude tato výzkumná studie prováděna, abychom zajistili, že budeme dodržovat aktuální vládní doporučení týkající se dodržování bezpečnostních vzdálenosti ale také přijetí veškerých opatření z hlediska omezení šíření viru. Než se rozhodnete, zda se přesto chcete zúčastnit této výzkumné studie, měli byste pečlivě zvážit všechny uvedené informace. Pokud se rozhodnete neúčastnit, informujte výzkumný tým. Máte-li jakékoli další dotazy týkající se poskytnutých informací, kontaktujte prosím členy výzkumného týmu.</p>
+        </div
+        <div class="section level2">
+            <h3>Existují nějaké další záležitosti, které bych měl/a  zvážit, než se rozhodnu, zda se mám zúčastnit?</h3>
+            <p>Průběh výzkumu pro vás nepředstavuje žádné zvýšené riziko v souvislosti s pandemií COVID-19, které by mělo ovlivnit vaše konečné rozhodnutí účastnit se výzkumu.</p>
+        </div>
+        <div class="section level2">
+            <h3>Jaké další kroky, které mi zajistí bezpečí během mé participace, podniknete?</h3>
+            <p>Všechny potřebné informace a další materiály vám budou poskytnuty online (e – mailem atd.), což znamená, že nebudete v osobním kontaktu s výzkumníky nebo jinými účastníky. Metoda sběru dat je také bezkontaktní (viz výše uvedené informace).</p>
+        </div>
+        <div class="section level2">
+            <h3>Existují nějaké další informace, které potřebuji vědět?</h3>
+            <p>Nejsou nutné žádné další informace.</p>
+        </div>
+        <div class="section level2">
+            <h3>Co když mám další dotazy?</h3>
+            <p>V případě jakýchkoli dalších dotazů nás neváhejte kontaktovat. Rádi zodpovíme vaše dotazy a vysvětlíme vše, co vás zajímá, abyste si mohli být jisti všemi aspekty své účasti v tomto výzkumu.</p>
+        </div>
+        <h3>Kontaktní údaje</h3>
+        <p>Máte-li jakékoli dotazy ke studii nebo máte -li zájem se zúčastnit, obraťte se prosím na výzkumné pracovníky:</p>
+        <ul>
+            <li>JONATHAN HUCK – JONATHAN.HUCK@MANCHESTER.AC.UK, +441612 757671</li>
+            <li>LUCIA BRISUDOVÁ – LUCIA.BRISUDOVA@UPOL.CZ, +420 608 045 600</li>
+        </ul>
+    </div>
+
+</body>
+</html>

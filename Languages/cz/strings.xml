@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="textandroid_maps_title">Kliknutím na Mapa zaznamenáte umístění</string>
+	<string name="textandroid_next">Další</string>
+	<string name="textandroid_previous">Předchozí</string>
+
+	<string name="boot_notification_title">CIN-CITY zaznamenalo spouštění vašeho zařízení</string>
+	<string name="boot_notification_text">Pošlete nám prosím nějaké údaje. Klepnutím přejdete do CIN-CITY!</string>
+
+	<string name="app_name">CIN-CITY</string>
+	
+</resources>

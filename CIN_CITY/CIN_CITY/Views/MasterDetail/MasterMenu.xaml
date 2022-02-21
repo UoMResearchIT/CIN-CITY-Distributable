@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="True"
+             x:Class="CIN_CITY.Views.MasterMenu"
+             Title="{StaticResource text_menu}">
+    <Grid RowDefinitions="*, Auto">
+        <StackLayout Margin="0"
+                     Padding="0">
+            <Frame BackgroundColor="{StaticResource uom_purple}"
+                   Padding="0"
+                   Margin="0"
+                   CornerRadius="0">
+                <Image x:Name="MenuImage"
+                       Margin="{StaticResource margin}"
+                       Aspect="AspectFit"
+                       HeightRequest="64" />
+            </Frame>
+            <ListView Margin="10, 0, 10, 0"
+                      x:Name="MenuItemsListView"
+                      SeparatorVisibility="None"
+                      HasUnevenRows="true"
+                      ItemsSource="{Binding MenuItems}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="{StaticResource margin}"
+                                  RowSpacing="{StaticResource margin}">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Image Source="{Binding IconSource}" />
+
+                                <Label HorizontalOptions="Start"
+                                       Grid.Column="1"
+                                       Text="{Binding Title}"
+                                       Style="{StaticResource text_style_regular}"
+                                       TextColor="{StaticResource uom_purple}"
+                                       HorizontalTextAlignment="Start" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        <Label Grid.Row="1"
+               Text="{Binding VersionText}"
+               HorizontalTextAlignment="Center"
+               FontSize="Micro"
+               TextColor="{StaticResource uom_purple}" />
+    </Grid>
+</ContentPage>
